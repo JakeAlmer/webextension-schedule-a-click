@@ -1,0 +1,1 @@
+# webextension-schedule-a-click
