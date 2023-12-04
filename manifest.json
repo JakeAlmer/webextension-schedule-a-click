@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Context menu: Scheedule a Click",
+    "description": "Add a context menu option to schedule a click on an DOM element.",
+    "version": "1.0",
+    "homepage_url": "https://github.com/JakeAlmer/webextension-schedule-a-click",
+
+    "permissions": ["contextMenus", "activeTab", "scripting"],
+
+    "background": {
+      "service_worker": "background.js"
+    },
+
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["content.js"]
+        }
+    ]
+}
